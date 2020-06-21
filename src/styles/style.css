@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    background: var(--darkblue);
+}
+
+:root {
+    --red: rgba(26, 211, 224, 0.877);
+    --darkblue: radial-gradient(circle, rgba(44, 189, 165, 1) 0%, rgba(98, 230, 217, 1) 64%, rgba(255, 0, 228, 1) 96%, rgba(226, 14, 164, 0.9836309523809523) 100%, rgba(237, 232, 29, 1) 100%, rgba(230, 93, 93, 1) 100%);
+}
+
+
+/* Scroll Styling */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+
+/* -------------------------- */
+
+h1 {
+    color: rgb(34, 33, 33);
+    text-align: center;
+    font-family: 'Sacramento';
+    font-size: 50px;
+}
+
+app-bar h2 {
+    display: block;
+    text-align: center;
+    background: red;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.view>div {
+    margin: 12px;
+    background-color: rgb(236, 236, 235);
+    padding: 10px;
+    text-align: center;
+    color: rgb(13, 13, 14);
+    font-family: Gisha;
+    border-radius: 5px;
+}
+
+input[type=search] {
+    border: 1px solid #eee;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    outline: none;
+    padding: 10px;
+    width: 400px;
+}
+
+button {
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 80px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+button:hover,
+button:active {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    margin-top: 100px;
+    color: cornsilk;
+}
+
+
+/* bagian view */
+
+.view {
+    padding: 1em;
+    column-count: 3;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
+    transition: 0.3s linear;
+}
+
+img:hover {
+    filter: grayscale(0);
+}
+
+
+/* responsive  */
+
+@media(max-width: 900px) {
+    .view {
+        column-count: 2;
+    }
+    img {
+        filter: grayscale(0) brightness(1);
+    }
+    input[type=search] {
+        border: 1px solid #eee;
+        border-radius: 4px 0 0 4px;
+        font-size: 20px;
+        outline: none;
+        padding: 10px;
+        width: 400px;
+    }
+    button {
+        background-color: black;
+        color: #ddd;
+        transition: all .5s;
+    }
+}
+
+@media(max-width: 800px) {
+    .view {
+        column-count: 2;
+        filter: grayscale(0) brightness(1);
+    }
+    img {
+        filter: grayscale(0) brightness(1);
+    }
+    input[type=search] {
+        border: 1px solid #eee;
+        border-radius: 4px 0 0 4px;
+        font-size: 20px;
+        outline: none;
+        padding: 10px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 600px) {
+    .view {
+        column-count: 2;
+        filter: grayscale(0) brightness(1);
+    }
+    img {
+        filter: grayscale(0) brightness(1);
+    }
+}
+
+@media(max-width: 500px) {
+    .view {
+        column-count: 1;
+        filter: grayscale(0) brightness(1);
+    }
+    img {
+        filter: grayscale(0) brightness(1);
+    }
+}
+
+@media(max-width: 400px) {
+    .view {
+        column-count: 1;
+        filter: grayscale(0) brightness(1);
+    }
+    img {
+        filter: grayscale(0) brightness(1);
+    }
+}
+
+
+/* @media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+/* @media screen and (max-width: 600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .col img {
+        filter: grayscale(0) brightness(1);
+    }
+} */
